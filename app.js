@@ -19,6 +19,7 @@ function openInput() {
     for (let i = 0; i < elems.length; i+=1) {
         elems[i].style.display = 'block';       
     }
+    
 }
 
 function findTotalforBrex() {
@@ -32,6 +33,16 @@ function findTotalforBrex() {
             tot += parseInt(arr[i].value);
     }
     document.getElementById('total3').value =`${"$"+(tot*0.3).toFixed(2)}` ;
+
+    let elems = document.getElementsByClassName('result')
+    for (let i = 0; i < elems.length; i+=1) {
+        
+        elems[i].innerHTML="Brex Bussiness Card"
+    }
+    let boxes=  document.getElementsByClassName("box-result");
+    for (let i = 0; i < boxes.length; i+=1) {
+        boxes[i].style.display = 'block';       
+    }
     
 }
 function findTotalforStripe() {
@@ -46,6 +57,16 @@ function findTotalforStripe() {
     }
     document.getElementById('total3').value =`${"$"+(tot*2.9).toFixed(2)}` ;
     
+    let elems = document.getElementsByClassName('result')
+    for (let i = 0; i < elems.length; i+=1) {
+        
+        elems[i].innerHTML="Strapi Bussiness Card"
+    }
+    let boxes=  document.getElementsByClassName("box-result");
+    for (let i = 0; i < boxes.length; i+=1) {
+        boxes[i].style.display = 'block';       
+    }
+    
 }
 function findTotalforAmex() {
     let arr = document.getElementsByName('input-number');
@@ -58,6 +79,16 @@ function findTotalforAmex() {
             tot += parseInt(arr[i].value);
     }
     document.getElementById('total3').value =`${"$"+(tot*1.3).toFixed(2)}` ;
+
+    let elems = document.getElementsByClassName('result')
+    for (let i = 0; i < elems.length; i+=1) {
+        
+        elems[i].innerHTML="Amex Bussiness Card"
+    }
+    let boxes=  document.getElementsByClassName("box-result");
+    for (let i = 0; i < boxes.length; i+=1) {
+        boxes[i].style.display = 'block';       
+    }
     
 }
 
