@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Assignment</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="headline">Calculate Your Rewards</h1>
+        <div class="wrapper" >
+            <div class="value">
+                <h2 class="value-text">Vendor/Bills</h2>
+                <input onblur="findTotal() " class="value-input" type="text" id="input-number1" placeholder="Enter a number" name="input-number" />
+            </div>
+            <div class="value">
+                <h2 class="value-text">Media/Ad Spend</h2>
+                <input onblur="findTotal() " class="value-input" type="text" id="input-number2" placeholder="Enter a number"  name="input-number"  />
+            </div>
+            <div class="value">
+                <h2 class="value-text">corp.spend</h2>
+                <input onblur="findTotal() " class="value-input" type="text" id="input-number3" placeholder="Enter a number"  name="input-number" />
+            </div>
+            <div class="value">
+                <h2 class="value-text">Team Project</h2>
+                <input onblur="findTotal() " class="value-input" type="text" id="input-number4" placeholder="Enter a number" name="input-number"  />
+            </div>
+        </div>
+        <div class="reward-wrapper">
+            <h1 class="headline"> Compare your Rewards</h1>
+            <div class="btn-wrapper">
+              <button onclick="findTotalforBrex(); openInput();" class="button" id="brex"> Brex</button>  
+              <button onclick=" findTotalforStripe(); openInputfor();" class="button" id="stripe">Stripe</button>
+              <button onclick="findTotalforAmex(); openInput();"  class="button" id="apex">Amex</button>
+            </div>
+        </div>
+
+        <div class="results-container" >
+            <div class="card">
+                <img src="favpng_emv-smart-card-credit-card-point-of-sale-debit-card.png" alt="">
+            <div class="results">
+                
+            </div>
+            <div >
+                <h2 class="result">Business Card</h2>
+                <h2>Unlimited Rewards</h2>
+                <h2>Lifetime Rewards</h2>
+            </div>
+        </div>
+         <div class="bar-output">
+             <div class="box result">
+                    <div class="tt" id="b-bar" data-parcent="60"></div>
+             </div>
+             <div class="box">
+                <div class="tt" id="b-bar2" data-parcent2="70"></div>
+         </div>
+         <div class="box">
+            <div class="tt" id="b-bar3"  data-parcent3="80"></div>
+     </div>
+    </div>
+        <div class="results-output">
+            <input class="value-output result" type="text" id="total3"/>
+            <input class="value-output"  type="text" id="total">
+            <input class="value-output"  type="text" id="total2">
+        </div>
+    
+    
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
